@@ -10,6 +10,16 @@ type BranchSelectProps = {
   changeBranch: (e: any) => void;
 };
 
+type MovementFactor = number;
+
+type Tile = {
+  movementFactor: MovementFactor;
+};
+
+type Board = {
+  tiles: Tile[];
+};
+
 const BranchSelect = ({
   branches,
   activeBranch,
